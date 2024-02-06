@@ -17,6 +17,8 @@ public class MovieValidatorImpl implements MovieValidator {
     public void isMovieValid(Movie movie) {
         nullFieldValidator.isFieldNotNull(movie,
                 new InvalidMovieException("Movie is null"));
+        isTitleValid(movie.getTitle());
+        isDescriptionValid(movie.getDescription());
     }
 
     @Override
