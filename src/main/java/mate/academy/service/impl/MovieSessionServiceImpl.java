@@ -31,6 +31,7 @@ public class MovieSessionServiceImpl implements MovieSessionService {
 
     @Override
     public List<MovieSession> findAvailableSessions(Long movieId, LocalDate date) {
+        movieSessionValidator.isLocalDateValid(date);
         List<MovieSession> movieSessions = movieSessionDao.findAvailableSessions(movieId, date);
         if (movieSessions.isEmpty()) {
             throw new DataProcessingException("Can't find any movie session");

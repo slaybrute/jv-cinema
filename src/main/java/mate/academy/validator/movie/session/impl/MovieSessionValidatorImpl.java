@@ -1,7 +1,7 @@
 package mate.academy.validator.movie.session.impl;
 
 import java.time.LocalDate;
-import mate.academy.exception.MovieSessionInitializationException;
+import mate.academy.exception.InvalidMovieSessionException;
 import mate.academy.lib.Inject;
 import mate.academy.lib.Service;
 import mate.academy.model.MovieSession;
@@ -22,7 +22,7 @@ public class MovieSessionValidatorImpl implements MovieSessionValidator {
     @Override
     public void isMovieSessionValid(MovieSession movieSession) {
         nullFieldValidator.isFieldNotNull(movieSession,
-                new MovieSessionInitializationException("Movie session is null"));
+                new InvalidMovieSessionException("Movie session is null"));
         isLocalDateValid(movieSession.getLocalDate());
         cinemaHallValidator.isCinemaHallValid(movieSession.getCinemaHall());
         movieValidator.isMovieValid(movieSession.getMovie());
@@ -31,9 +31,9 @@ public class MovieSessionValidatorImpl implements MovieSessionValidator {
     @Override
     public void isLocalDateValid(LocalDate localDate) {
         nullFieldValidator.isFieldNotNull(localDate,
-                new MovieSessionInitializationException("Local date is null"));
+                new InvalidMovieSessionException("Local date is null"));
         if (localDate.isBefore(LocalDate.now())) {
-            throw new MovieSessionInitializationException("Date is already passed");
+            throw new InvalidMovieSessionException("Date is already passed");
         }
     }
 }
