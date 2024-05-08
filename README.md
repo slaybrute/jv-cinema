@@ -1,31 +1,30 @@
-# Cinema
+# 🎬 Cinema App
 
-## Project Overview
+## 🌟 Project Overview
+The **Cinema App** is a sophisticated server-side application designed to facilitate seamless and secure interactions for movie scheduling and booking in various cinema halls. It leverages custom dependency injection and annotation-based configurations to ensure flexibility and maintainability.
 
-The Cinema App is a comprehensive platform designed to provide users with a seamless and secure experience in exploring, booking, and enjoying movies in various cinema halls. The key features implemented in the project include:
+## 🔑 Key Features
+- 📅 **Movie Session Scheduling**: Users can schedule their movie sessions with high flexibility.
+- 🎞 **Cinema and Movie Management**: Provides robust backend management of movies and cinema halls.
+- 🎟 **Ticket Handling**: Manages all aspects of ticket booking including availability checks and reservations.
+- 🛒 **Shopping Cart Functionality**: Enables users to manage their selections before finalizing purchases.
+- 🔐 **User Authentication**: Implements custom security solutions to protect user data.
+- 🛍 **Order Processing**: Ensures all transactions are completed smoothly and efficiently.
 
-- Movie session scheduling
-- Movie and cinema hall management
-- Ticket handling
-- Shopping cart functionality
-- User authentication
-- Order processing
+## 🛠 Technologies Used
+- **Custom Injector & Annotations**: Developed to manage dependencies dynamically without relying on external frameworks.
+- **Hibernate**: Utilized for ORM capabilities to interact with the database effectively.
+- **Manual Transaction Handling**: Ensures precise control over database transactions, enhancing performance and data integrity.
 
-## Key Responsibilities
+## 👨‍💻 Key Responsibilities
+- **Custom Injector Implementation**: Developed a lightweight dependency injection framework tailored for the application.
+- **Backend Functionality Development**: Implemented core functionalities such as scheduling, ticket handling, and user authentication.
+- **Database and Transaction Management**: Managed database interactions using Hibernate, including session and transaction handling manually.
 
-As a Java software developer on this project, my key responsibilities included:
+## 🚀 Getting Started
 
-- Implementing movie session scheduling functionality to allow users to plan their movie-going experience.
-- Managing movies and cinema halls to ensure an up-to-date and organized platform.
-- Developing ticket handling features for a smooth ticket booking process.
-- Implementing a shopping cart to enable users to conveniently purchase multiple tickets in a single transaction.
-- Implementing user authentication to ensure secure access to the platform.
-- Handling order processing for a seamless and efficient user experience.
-
-## How to Use
-
-To run the Cinema App locally, follow these steps:
-
-1. Clone the repository to your local machine.
+### Setup and Installation
+1. **Clone the Repository**:
    ```bash
    git clone https://github.com/slaybrute/cinema-app.git
+   
